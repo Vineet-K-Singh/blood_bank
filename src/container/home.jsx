@@ -1,14 +1,11 @@
 import React from 'react';
-import Header from '../component/header';
+import Header1 from '../component/header1';
 import './home.css'
-// import {
-//     BloodDonation
-// }from "../constant/image"
 
 function Home(){
     return (
         <>
-            <Header/>
+            <Header1/>
             <section className="home">
                 <h3>The blood you donate gives someone</h3>
                 <h3>another chance at life</h3>

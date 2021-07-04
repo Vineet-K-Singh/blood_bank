@@ -1,4 +1,5 @@
 import React from 'react'
+import './sign_up.css'
 
 function Sign_up() {
     return (

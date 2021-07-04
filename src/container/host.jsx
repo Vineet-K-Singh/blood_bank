@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../component/header";
+import './host.css'
 
 function Host() {
   return (
@@ -19,7 +20,7 @@ function Host() {
           upon your service at times of greatest need as the situation evolves.
           We are grateful for your commitment and flexibility during this
           challenging time and looking forward to coming TOGETHER again in
-          service.{" "}
+          service.
         </p>
         <div className="box">
           <h3>Lets get started...</h3>

@@ -26,14 +26,14 @@ section{
     padding: 1rem 9%;
     padding-top: 10rem;
 }
-header .free1{
+header .logo{
     margin-top: 1rem;
     padding-left: 1rem;
     font-size: 1.5rem;
     font-weight: bolder;
     color: black;
 }
-header .free1 span{
+header .logo FontawesomeIcon{
     margin-top: 1rem;
     color: black;
 }
@@ -66,6 +66,7 @@ header .nav .social:hover{
     padding-top: 10rem;
     padding-left: 30rem;
     text-align: center;
+    background-image: url("../assets/img/blood-donation.jfif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;

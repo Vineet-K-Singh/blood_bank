@@ -1,4 +1,5 @@
 import React from 'react'
+import './sign_in.css'
 
 function Sign_in() {
     return (
@@ -20,13 +21,9 @@ function Sign_in() {
                     </form>
                     <a href="./main.html"><button id="bt3">Sign in</button></a>
                     <table>
-                        <td><a href="#">Forgot Password?</a></td>
-                        <td><a href="#">Not a member yet?</a></td>
+                        <td><a href="/">Forgot Password?</a></td>
+                        <td><a href="/">Not a member yet?</a></td>
                     </table>
-                    <br/>
-                    <a href="/"><button id="bt1">Sign in with Google+</button></a>
-                    <br/>
-                    <a href="/"><button id="bt2">Sign in with Facebook</button></a>
                 </div>
             </div> 
         </>

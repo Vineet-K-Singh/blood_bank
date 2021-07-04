@@ -102,13 +102,13 @@ header .nav .social:hover{
 .search .bo0x .bo0x1{ 
     height: 100%;
     width:50%;
-    background-image: url("./img/search-donor2.jfif");
+    background-image: url("../assets/img/search-donor2.jfif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-radius: 2rem 0 0 2rem;
 }
 .search .bo0x .bo0x2{
-    background-image: url("./img/search-donor1.jfif");
+    background-image: url("../assets/img/search-donor1.jfif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding-left: 17rem;
@@ -230,7 +230,7 @@ header .nav .social:hover{
         display: none;
     }
     .search .bo0x .bo0x2{
-        background: url("./img/backup3.jfif");
+        background: url("../assets/img/backup3.jfif");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%;

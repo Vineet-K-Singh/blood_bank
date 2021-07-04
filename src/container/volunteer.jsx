@@ -1,5 +1,7 @@
 import React from "react";
 import Header from "../component/header";
+import './volunteer.css'
+import Image1 from "../assets/img/image1.jfif"
 
 function Volunteer() {
   return (
@@ -8,7 +10,7 @@ function Volunteer() {
       <section className="ghost">
         <h1>Volunteer Needed</h1>
         <h2>Here Are Our Most-Needed Volunteer Opportunities</h2>
-        <img src="./img/image1.jfif" alt="vimg" />
+        <img src={Image1} alt="vimg" />
         <p>
           Discover a new purpose by joining a lifesaving team to help support
           blood collections in your community. Two key volunteer opportunities

@@ -96,7 +96,7 @@ header .nav .social:hover{
     margin: 0;
     height: 100%;
     width: 100%;
-    background-image: url("./img/main1.jpg");
+    background-image: url("../assets/img/main1.jfif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -207,7 +207,7 @@ header .nav .social:hover{
 .doc .doc1{
     height: 20rem;
     width: 100%;
-    background-image: url("./img/doc.jfif");
+    background-image: url("../assets/img/doc.jfif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -237,7 +237,7 @@ footer .foot h4{
     font-size: 1rem;
     margin-right: 1.5rem;
 }
-footer .foot a span{
+footer .foot a{
     margin-right: 1.5rem;
 }
 

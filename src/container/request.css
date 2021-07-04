@@ -102,13 +102,13 @@ header .nav .social:hover{
 .req .b0x .b0x1{
     height: 100%;
     width:50%;
-    background-image: url("./img/request1.jfif");
+    background-image: url("../assets/img/request1.jfif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-radius: 2rem 0 0 2rem;
 }
 .req .b0x .b0x2{
-    background-image: url("./img/request2.jfif");
+    background-image: url("../assets/img/request2.jfif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding-left: 6rem;
@@ -224,7 +224,7 @@ header .nav .social:hover{
         display: none;
     }
     .req .b0x .b0x2{
-        background: url("./img/backup4.jfif");
+        background: url("../assets/img/backup4.jfif");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%;

@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../component/header";
+import './search_donor.css'
 
 function Search_donor() {
   return (

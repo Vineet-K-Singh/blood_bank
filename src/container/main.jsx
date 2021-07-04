@@ -1,8 +1,17 @@
 import React from 'react'
 import Header from '../component/header'
-import {
-    Know1,Know2,Know3,Help1,Help2,Help3
-}from "../constant/image"
+import './main.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faFacebook, faTwitter, faInstagram} from "@fortawesome/free-brands-svg-icons"
+import Know1 from "../assets/img/know1.jfif"
+import Know2 from "../assets/img/know2.jfif"
+import Know3 from "../assets/img/know3.jfif"
+import Help1 from "../assets/img/help1.jfif"
+import Help2 from "../assets/img/help2.jfif"
+// import Help3 from "../assets/img/help3.jfif"
+// import {
+//     Know1,Know2,Know3,Help1,Help2
+// }from "../constant/image"
 
 function Main() {
     return (
@@ -22,7 +31,7 @@ function Main() {
                     </ul>
                 </div>
             </section>
-            <section className="Help">
+            <section className="know">
                 <div className="see">
                     <div className="sub-box1">
                         <img src={Know1} alt="image1"/>
@@ -55,11 +64,11 @@ function Main() {
                             <h3>Become a volunteer</h3>
                             <a href="./volunteer.html">Learn More</a>
                         </div>
-                        <div className="sub">
+                        {/* <div className="sub">
                             <img src={Help3} alt="help3"/>
                             <h3>Make a financial donation</h3>
                             <a href="./fin.html">Donate Now</a>
-                        </div>
+                        </div> */}
                     </div>
             </section>
             <secton className="doc">
@@ -75,9 +84,9 @@ function Main() {
             <footer>
                 <div className="foot">
                     <h4>Copyright &copy;2021 Indian Blood Bank</h4>
-                    <a href="/public" className="social"><span className="fab fa-facebook fa-2x"></span></a>
-                    <a href="/node_modules" className="social"><span className="fab fa-twitter fa-2x"></span></a>
-                    <a href="/" className="social"><span className="fab fa-instagram fa-2x"></span></a>
+                    <a href="/public" className="social"><FontAwesomeIcon icon={faFacebook} color="black"/></a>
+                    <a href="/node_modules" className="social"><FontAwesomeIcon icon={faTwitter} color="black"/></a>
+                    <a href="/" className="social"><FontAwesomeIcon icon={faInstagram} color="black"/></a>
                 </div>
             </footer>
         </React.Fragment>

@@ -104,13 +104,13 @@ header .nav .social:hover{
     padding-top: 10rem;
     height: 100%;
     width:50%;
-    background-image: url("./img/nearby1.jfif");
+    background-image: url("../assets/img/nearby1.jfif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-radius: 2rem 0 0 2rem;
 }
 .near .boo0x .boo0x2{
-    background-image: url("./img/nearby2.jfif");
+    background-image: url("../assets/img/nearby2.jfif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding-left: 8rem;
@@ -215,7 +215,7 @@ header .nav .social:hover{
         display: none;
     }
     .near .boo0x .boo0x2{
-        background: url("./img/backup5.jfif");
+        background: url("../assets/img/backup5.jfif");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%;
