@@ -1,1 +1,12 @@
-export const BloodDonation=require("../assets/img/blood-donation.jpg");
+export const BloodDonation=require("../assets/img/blood-donation.jfif");
+export const Know1=require("../assets/img/know1.jfif");
+export const Know2=require("../assets/img/know2.jfif");
+export const Know3=require("../assets/img/know3.jfif");
+export const Help1=require("../assets/img/help1.jfif");
+export const Help2=require("../assets/img/help2.jfif");
+export const Help3=require("../assets/img/help3.jfif");
+// export const =require("../assets/img/");
+// export const =require("../assets/img/");
+// export const =require("../assets/img/");
+// export const =require("../assets/img/");
+// export const =require("../assets/img/");

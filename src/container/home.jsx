@@ -5,7 +5,7 @@ import {
     BloodDonation
 }from "../constant/image"
 
-export default Home=()=>{
+function Home(){
     return (
         <>
             <Header/>
@@ -24,3 +24,4 @@ export default Home=()=>{
         </>
     )
 }
+export default Home;

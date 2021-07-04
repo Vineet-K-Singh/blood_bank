@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: "Poppins",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: .8rem 1rem 1rem 1rem;
+    background-color: #b7b7a4;
+}
+header .logo{
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    color: red;
+}
+header .logo span{
+    margin-top: 1rem;
+    color: red;
+}
+header .nav a{
+    font-size: 1rem;
+    margin: 1.5rem;
+    padding: .5rem;
+    color: black;
+}
+header .nav .active,.link{
+    border-radius: 1rem;
+}
+header .nav .social{
+    margin-top: 2.5rem;
+    border-radius: 50%;
+    color: red;
+}
+header .nav .active:hover,.link:hover{
+    color: white;
+    background-color: red;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+header .nav .social:hover{
+    color: blue;
+    background-color: tansparent;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+#menu{
+    font-size: 1rem;
+    color: black;
+    display: none;
+}
+#menu button{
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+}
+#menu button:hover{
+    cursor: pointer;
+}
+.menu-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.menu-content a {
+    color: black;
+    padding: .5rem;
+    text-decoration: none;
+    display: block;
+}
+.show{
+    display: block;
+}
+
+.head{
+    margin: 0;
+    padding: 3rem 0 0 0 ;
+    height: 21rem;
+}
+.head .box{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("./img/main1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.head .box ul{
+    float: right;
+    padding-right: 3rem;
+    padding-top: 4rem;
+    list-style-type: none;
+}
+.head .box ul li{
+    padding-bottom: 1.5rem;
+}
+.head .box ul li h1{
+    float: right;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.head .box ul li h3{
+    font-size: 1.5rem;
+    color: red;
+}
+.head .box table td a button{
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    padding: .5rem;
+    background-color: #52b788;
+    border-radius: .7rem;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 3rem;
+}
+
+.know{
+    margin: 1rem;
+    padding: 0;
+}
+.know .see{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.know .see .sub-box1{
+    height: 24rem;
+    width: 20rem;
+    text-align: center;
+    margin: 1.5rem;
+    padding: 1rem;
+    box-shadow: .5rem .5rem rgba(0,0,0,.1);
+    border-radius: 2rem;
+}
+.know .see .sub-box1 img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 1rem;
+}
+.know .see .sub-box1 button{
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    background-color: #52b788;
+    border-radius: .7rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.help{
+    margin: 1rem;
+    padding: 0;
+    text-align: center;
+}
+.help h1{
+    margin-bottom: 1rem;
+}
+.help .cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.help .cont .sub{
+    height: 20rem;
+    width: 20rem;
+    text-align: center;
+    margin: 1.5rem;
+    padding: 1rem;
+    box-shadow: .5rem .5rem rgba(0,0,0,.1);
+    border-radius: 2rem;
+}
+.help .cont .sub img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 1rem;
+}
+.help .cont .sub a{
+    text-decoration: none;
+    color: blue;
+}
+
+.doc .doc1{
+    height: 20rem;
+    width: 100%;
+    background-image: url("./img/doc.jfif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+.doc .doc1 h1{
+    font-size: 2.5rem;
+}
+.doc .doc1  a button{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: red;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+footer .foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+footer .foot h4{
+    font-size: 1rem;
+    margin-right: 1.5rem;
+}
+footer .foot a span{
+    margin-right: 1.5rem;
+}
+
+
+
+/* Media Querry */
+@media screen and (max-width: 1240px){
+    header .logo{
+        font-size: 1.2rem;
+        padding-left: .3rem;
+    }
+    header .logo span{
+        margin-top: .7rem;
+    }
+    header .nav a{
+        font-size: .8rem;
+        margin: .4rem;
+        padding: .2rem;
+    }
+}
+@media screen and (max-width: 760px){
+    header .logo{
+        font-size: 1.1rem;
+        padding-left: .2rem;
+    }
+    header .logo span{
+        margin-top: .6rem;
+    }
+    header .nav a{
+        font-size: .7rem;
+        margin: .3rem;
+    }
+    .head .box ul li h1{
+        font-size: 2rem;
+    }
+    .head .box ul li h3{
+        font-size: 1.2rem;
+    }
+    .know .see{
+        display: flex;
+        flex-direction: column;
+    }
+    .help .cont{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 680px){
+    #menu{
+        display: block;
+    }
+    header .logo{
+        font-size: 1.2rem;
+        padding-left: .3rem;
+    }
+    header .logo span{
+        margin-top: .6rem;
+    }
+    header .nav{
+        display: none;
+    }
+    .doc .doc1 h1{
+        font-size: 2rem;
+    }
+    .doc .doc1 h4{
+        font-size: 1rem;
+    }
+    footer .foot h4{
+        font-size: .9rem;
+    }
+}
+@media screen and (max-width: 480px){
+    #menu{
+        font-size: 1.5rem;
+    }
+    .head .box ul{
+        display: none;
+    }
+    .know .see .sub-box1{
+        height: 27rem;
+        width: 15rem;
+    }
+    .help .cont .sub{
+        height: 17rem;
+        width: 15rem;
+    }
+    .help .cont .sub img{
+        height: 10rem;
+        width: 10rem;
+    }
+    .doc .doc1 h1{
+        font-size: 1.5rem;
+    }
+    .doc .doc1 h4{
+        font-size: .8rem;
+    }
+    footer .foot h4{
+        font-size: .6rem;
+        margin-right: .6rem;
+    }
+    footer .foot a span{
+        font-size: 1.2rem;
+        margin-right: .6rem;
+    }
+}
