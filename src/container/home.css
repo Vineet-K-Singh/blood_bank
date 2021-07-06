@@ -10,7 +10,7 @@
     outline: none;
 }
 
-header{
+#header{
     width: 100%;
     display: flex;
     align-items: center;
@@ -21,42 +21,42 @@ header{
     z-index: 1000;
     padding: .8rem 1rem 1rem 1rem;
 }
-section{
+.home{
     height: 100vh;
     padding: 1rem 9%;
     padding-top: 10rem;
 }
-header .logo{
+#header .logo{
     margin-top: 1rem;
     padding-left: 1rem;
     font-size: 1.5rem;
     font-weight: bolder;
     color: black;
 }
-header .logo FontawesomeIcon{
+#header .logo FontawesomeIcon{
     margin-top: 1rem;
     color: black;
 }
-header .nav a{
+#header .nav a{
     font-size: 1.1rem;
     font-weight: bold;
     margin: 1.5rem;
     padding: .5rem;
     color: black;
 }
-header .nav .active,.link{
+#header .nav .active,.link{
     border-radius: 1rem;
 }
-header .nav .social{
+#header .nav .social{
     margin-top: 2.5rem;
     border-radius: 50%;
 }
-header .nav .active:hover,.link:hover{
+#header .nav .active:hover,.link:hover{
     color: white;
     background-color: black;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
-header .nav .social:hover{
+#header .nav .social:hover{
     color: white;
     background-color: tansparent;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
@@ -108,13 +108,13 @@ header .nav .social:hover{
     }
 }
 @media screen and (max-width: 945px){
-    header{
+    #header{
         padding: .8rem;
     }
-    header .free1{
+    #header .free1{
         font-size: 1.3rem;
     }
-    header .nav a{
+    #header .nav a{
         font-size: 1rem;
         padding: .3rem;
         margin: .6rem;
@@ -131,16 +131,16 @@ header .nav .social:hover{
 }
 
 @media screen and (max-width: 700px){
-    header{
+    #header{
         padding: .5rem;
     }
-    header .free1{
+    #header .free1{
         font-size: 1.1rem;
     }
-    header .free1 span{
+    #header .free1 span{
         margin-top: .7rem;
     }
-    header .nav a{
+    #header .nav a{
         font-size: .8rem;
         padding: .1rem;
         margin: .3rem;
@@ -157,16 +157,16 @@ header .nav .social:hover{
 }
 
 @media screen and (max-width: 480px){
-    header{
+    #header{
         padding: .3rem;
     }
-    header .free1{
+    #header .free1{
         font-size: 1rem;
     }
-    header .free1 span{
+    #header .free1 span{
         margin-top: .4rem;
     }
-    header .nav a{
+    #header .nav a{
         font-size: .5rem;
         padding: .03rem;
         margin: .13rem;

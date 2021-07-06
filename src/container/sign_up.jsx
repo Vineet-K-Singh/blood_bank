@@ -1,39 +1,34 @@
-import React from 'react'
-import './sign_up.css'
+import React from 'react';
+import './sign_up.css';
+import { useForm } from "react-hook-form";
 
 function Sign_up() {
+
+    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const onSubmit = data => {console.log(data)};
+
     return (
         <>
             <div className="sign-up">
                 <div className="box1">
                 </div>
                 <div className="box2">
-                    <form>
+                    <form onSubmit={handleSubmit(onSubmit)}>
                         <label>Username</label>
-                        <br/>
-                        <input type="text" placeholder="Type here your name"/>
-                        <br/>
+                        <input type="text" placeholder="Type here your name" {...register("username")}/>
                         <label>Email-id</label>
-                        <br/>
-                        <input type="email" placeholder="Type here your e-mail"/>
-                        <br/>
+                        <input type="text" placeholder="Type here your e-mail" {...register("email")}/>
                         <label>Password</label>
-                        <br/>
-                        <input type="text" placeholder="Type here your password"/>
-                        <br/>
+                        <input type="password" placeholder="Type here your password" {...register("password")}/>
                         <label>Repeat Password</label>
-                        <br/>
-                        <input type="text" placeholder="Repeat your password"/>
+                        <input type="password" placeholder="Repeat your password" {...register("password")}/>
+                        <a href="./home"><button>Sign up</button></a>
                     </form>
-                    <input type="checkbox" id="ïnt"/>
-                    <span>By signing up I agree with Terms and Conditions</span>
-                    <br/>
-                    <br/>
-                    <a href="./main.html"><button>Sign up</button></a>  or <a href="./sign-in.html">Log in</a>
+                    
                 </div>
             </div>
         </>
-    )
+    );
 }
 
-export default Sign_up
+export default Sign_up;

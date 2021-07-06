@@ -10,7 +10,7 @@ function Donate() {
         <div class="case1">
           <h1>Register here</h1>
           <h4>Read the requirement than register</h4>
-          <a href="./register.html">
+          <a href="./register">
             <button>Register</button>
           </a>
         </div>

@@ -24,8 +24,8 @@ function Main() {
                         <li><h3>Please Donate and Request Blood here</h3></li>
                         <li>
                             <table>
-                                <td><a href="./donate.html"><button>Donate</button></a></td>
-                                <td><a href="./request.html"><button>Request</button></a></td>
+                                <td><a href="./donate"><button>Donate</button></a></td>
+                                <td><a href="./request"><button>Request</button></a></td>
                             </table>
                         </li>
                     </ul>
@@ -57,12 +57,12 @@ function Main() {
                         <div className="sub">
                             <img src={Help1} alt="help1"/>
                             <h3>Host a blood drive</h3>
-                            <a href="./host.html">Apply to become a host</a>
+                            <a href="./host">Apply to become a host</a>
                         </div>
                         <div className="sub">
                             <img src={Help2} alt="help2"/>
                             <h3>Become a volunteer</h3>
-                            <a href="./volunteer.html">Learn More</a>
+                            <a href="./volunteer">Learn More</a>
                         </div>
                         {/* <div className="sub">
                             <img src={Help3} alt="help3"/>
@@ -78,14 +78,14 @@ function Main() {
                     <h4>Volunteer opportunities include supporting</h4>
                     <h4>blood donations and delivering much-</h4>
                     <h4>needed services to your community.</h4>
-                    <a href="./volunteer.html"><button>Learn more</button></a>
+                    <a href="./volunteer"><button>Learn more</button></a>
                 </div>
             </secton>
             <footer>
                 <div className="foot">
                     <h4>Copyright &copy;2021 Indian Blood Bank</h4>
-                    <a href="/public" className="social"><FontAwesomeIcon icon={faFacebook} color="black"/></a>
-                    <a href="/node_modules" className="social"><FontAwesomeIcon icon={faTwitter} color="black"/></a>
+                    <a href="/" className="social"><FontAwesomeIcon icon={faFacebook} color="black"/></a>
+                    <a href="/" className="social"><FontAwesomeIcon icon={faTwitter} color="black"/></a>
                     <a href="/" className="social"><FontAwesomeIcon icon={faInstagram} color="black"/></a>
                 </div>
             </footer>
