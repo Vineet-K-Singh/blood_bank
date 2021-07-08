@@ -1,11 +1,23 @@
 import React from 'react'
 import './sign_in.css'
 import { useForm } from "react-hook-form";
+import firebase from "../utils/firebase.js";
+import { Link, withRouter } from 'react-router-dom'
 
-function Sign_in() {
+function Sign_in(props) {
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => {console.log(data)};
+    const onSubmit = async (data) => {console.log(data)
+    
+
+        try {
+			await firebase.login(data.email, data.password)
+			props.history.replace('/main')
+		} catch(error) {
+			alert(error.message)
+		}
+
+    };
 
     return (
         <>

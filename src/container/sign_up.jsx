@@ -1,11 +1,22 @@
 import React from 'react';
 import './sign_up.css';
 import { useForm } from "react-hook-form";
+import firebase from "../utils/firebase";
 
-function Sign_up() {
+function Sign_up(props) {
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => {console.log(data)};
+    const onSubmit = async(data) => {console.log(data)
+    
+    	try {
+			await firebase.register(data.username, data.email, data.password)
+			// await firebase.addQuote(quote)
+			props.history.replace('/main')
+		} catch(error) {
+			alert(error.message)
+		}
+    
+    };
 
     return (
         <>
