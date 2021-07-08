@@ -1,8 +1,19 @@
 import React from "react";
 import Header from "../component/header";
-import './search_donor.css'
+import "./search_donor.css";
+import { useForm } from "react-hook-form";
+import "./register.css";
+import firebase from "../utils/firebase";
 
-function Search_donor() {
+function Search_donor(props) {
+  const { register, handleSubmit } = useForm();
+  const onSubmit = async (data) => {
+    console.log(data);
+    firebase.addSearcherDetail(data);
+    alert("Your data saved successfully");
+    props.history.replace("/main");
+  };
+
   return (
     <>
       <Header />
@@ -11,27 +22,17 @@ function Search_donor() {
           <div className="bo0x1"></div>
           <div className="bo0x2">
             <h1>Search a Donor</h1>
-            <form>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <label>Country</label>
-              <select name="country" id="country">
-                <option value="India">India</option>
-              </select>
+              <input type="text" {...register("SearchedCoutry")} />
               <label>State</label>
-              <select name="state" id="state">
-                <option value=""></option>
-              </select>
+              <input type="text" {...register("SearchedState")} />
               <label>District</label>
-              <select name="district" id="district">
-                <option value=""></option>
-              </select>
+              <input type="text" {...register("SearcheDistrict")} />
               <label>Blood Type</label>
-              <select name="blood" id="blood">
-                <option value=""></option>
-              </select>
+              <input type="text" {...register("SearchedBloodType")} />
+              <button type="submit">Search</button>
             </form>
-            <a href="/">
-              <button>Search</button>
-            </a>
           </div>
         </div>
       </section>

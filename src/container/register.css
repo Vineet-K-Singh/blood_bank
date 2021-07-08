@@ -133,7 +133,7 @@ header .nav .social:hover{
     font-weight: 600;
     color: #d00000;
 }
-.reg .booox .booox2 select,input{
+.reg .booox .booox2 input{
     font-size: 1rem;
     font-weight: normal;
     margin-bottom: 1rem;
@@ -141,15 +141,17 @@ header .nav .social:hover{
     border-radius: 1rem;
     padding: .3rem .3rem .3rem .5rem;
 }
-.reg .booox .booox2 a button{
+.reg .booox .booox2 button{
     background-color: indigo;
     padding: .3rem;
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
-    margin-left: 6rem;
+    width: 7rem ;
+    /* margin-left: 6rem; */
     border-radius: 1rem;
     cursor: pointer;
+    margin-bottom: 1rem;
 }
 
 
@@ -179,13 +181,13 @@ header .nav .social:hover{
     .reg .booox .booox2 label{
         font-size: .9rem;
     }
-    .reg .booox .booox2 select,input{
+    .reg .booox .booox2 input{
         font-size: .9rem;
         margin-bottom: .8rem;
     }
     .reg .booox .booox2 a button{
         font-size: 1.2rem;
-        margin-left: 4rem;
+        /* margin-left: 2rem; */
     }
 
 }
@@ -238,7 +240,7 @@ header .nav .social:hover{
     .reg .booox .booox2 label{
         font-size: 1rem;
     }
-    .reg .booox .booox2 select,input{
+    .reg .booox .booox2 input{
         font-size: 1rem;
         margin-bottom: 1rem;
     }
@@ -253,7 +255,7 @@ header .nav .social:hover{
     .reg .booox .booox2 h2{
         font-size: 1.3rem;
     }
-    .reg .booox .booox2 select,input{
+    .reg .booox .booox2 input{
         width: 11.5rem;
         margin-bottom: .9rem;
     }

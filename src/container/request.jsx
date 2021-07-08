@@ -1,8 +1,18 @@
 import React from "react";
 import Header from "../component/header";
-import './request.css'
+import "./request.css";
+import { useForm } from "react-hook-form";
+import "./register.css";
+import firebase from "../utils/firebase";
 
-function Request() {
+function Request(props) {
+  const { register, handleSubmit } = useForm();
+  const onSubmit = async (requestor_data) => {
+    console.log(requestor_data);
+    firebase.addRequestorDetail(requestor_data);
+    alert("Your request has been saved successfully");
+    props.history.replace("/main");
+  };
   return (
     <>
       <Header />
@@ -11,31 +21,25 @@ function Request() {
           <div className="b0x1"></div>
           <div className="b0x2">
             <h2>Make a Request</h2>
-            <form>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <label>Name</label>
-              <input type="text" />
+              <input type="text" {...register("RequestorName")} />
               <label>Aadhar Id</label>
-              <input type="text" />
+              <input type="text" {...register("RequestorAadharId")} />
               <label>Resedential Address</label>
-              <input type="text" />
+              <input type="text" {...register("RequestorAddress")} />
               <label>District</label>
-              <select name="district" id="dist">
-                <option></option>
-              </select>
+              <input type="text" {...register("RequestorDistrict")} />
               <label>State</label>
-              <select name="state" id="state">
-                <option></option>
-              </select>
+              <input type="text" {...register("RequestorState")} />
               <label>Email Id</label>
-              <input type="email" />
+              <input type="email" {...register("RequestorEmailId")} />
               <label>Mobile Number</label>
-              <input type="text" />
+              <input type="text" {...register("RequestorMobNo")} />
               <label>Blood Group</label>
-              <input type="text" />
+              <input type="text" {...register("RequestorBloodGroup")} />
+              <button type="submit">Submit</button>
             </form>
-            <a href="/">
-              <button>Submit</button>
-            </a>
           </div>
         </div>
       </section>

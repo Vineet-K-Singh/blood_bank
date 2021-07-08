@@ -82,13 +82,13 @@
 .home .log{
     margin-top: 3rem;
 }
-.home .log button{
+.home .log .btn{
     font-size: 1rem;
     color: black;
     border-radius: 1rem;
     padding: .5rem;
 }
-.home .log button:hover{
+.home .log .btn:hover{
     font-weight: bold;
     color: white;
     background-color: black;

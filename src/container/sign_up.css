@@ -50,11 +50,16 @@
     padding-left: 5rem;
     border-radius: 0 2rem 2rem 0;
 }
-.sign-up .box2 form label{
+.sign-up .box2 #fr{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+.sign-up .box2 #fr label{
     font-size: 1.5rem;
     font-weight: 530;
 }
-.sign-up .box2 form input{
+.sign-up .box2 #fr input{
     font-size: 1rem;
     height: 2.2rem;
     width: 15rem;
@@ -62,11 +67,11 @@
     border-radius: .7rem;
     padding-left: 1rem;
 }
-.sign-up .box2 form input::placeholder{
+.sign-up .box2 #fr input::placeholder{
     font-size: 1rem;
     text-align: center;
 }
-.sign-up .box2  form button{
+.sign-up .box2  #fr button{
     font-size: 1.3rem;
     font-weight: bold;
     color: black;
@@ -95,7 +100,7 @@
         background-color: white;
         padding-left:10%
     }
-    .sign-up .box2 form input{
+    .sign-up .box2 #fr input{
         background-color: #90e0ef;
     }
 }
@@ -111,10 +116,10 @@
     }
 }
 @media screen and (max-width: 420px){
-    .sign-up .box2 form input{
+    .sign-up .box2 #fr input{
         width: 15rem;
     }
-    .sign-up .box2 form button{
+    .sign-up .box2 #fr button{
         width: 8rem;
     }
 }

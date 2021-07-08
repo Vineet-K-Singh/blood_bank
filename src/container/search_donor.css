@@ -131,7 +131,7 @@ header .nav .social:hover{
     font-weight: bold;
     color: #d00000;
 }
-.search .bo0x .bo0x2 select{
+.search .bo0x .bo0x2 input{
     font-size: 1rem;
     font-weight: normal;
     margin-bottom: 1rem;
@@ -139,13 +139,14 @@ header .nav .social:hover{
     border-radius: 1rem;
     padding: .2rem;
 }
-.search .bo0x .bo0x2 a button{
+.search .bo0x .bo0x2 button{
     background-color: indigo;
     padding: .3rem;
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
-    margin-left: 6rem;
+    width: 7rem;
+    /* margin-left: 6rem; */
     border-radius: 1rem;
     cursor: pointer;
 }
@@ -180,12 +181,12 @@ header .nav .social:hover{
     .search .bo0x .bo0x2 label{
         font-size: .9rem;
     }
-    .search .bo0x .bo0x2 select,input{
+    .search .bo0x .bo0x2 input{
         font-size: .9rem;
         margin-bottom: .8rem;
         width: 11rem;
     }
-    .search .bo0x .bo0x2 a button{
+    .search .bo0x .bo0x2 button{
         font-size: 1.2rem;
         margin-left: 4rem;
     }
@@ -245,7 +246,7 @@ header .nav .social:hover{
     .search .bo0x .bo0x2 label{
         font-size: 1rem;
     }
-    .search .bo0x .bo0x2 select,input{
+    .search .bo0x .bo0x2 input{
         font-size: 1rem;
         margin-bottom: 1rem;
     }
@@ -260,7 +261,7 @@ header .nav .social:hover{
     .search .bo0x .bo0x2 h2{
         font-size: 1.3rem;
     }
-    .search .bo0x .bo0x2 select,input{
+    .search .bo0x .bo0x2 input{
         width: 11.5rem;
         margin-bottom: .9rem;
     }

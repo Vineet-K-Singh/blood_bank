@@ -1,9 +1,19 @@
 import React from "react";
 import Header from "../component/header";
-import './volunteer.css'
-import Image1 from "../assets/img/image1.jfif"
+import './volunteer.css';
+import Image1 from "../assets/img/image1.jfif";
+import { useForm } from "react-hook-form";
+import "./register.css";
+import firebase from "../utils/firebase";
 
-function Volunteer() {
+function Volunteer(props) {
+  const { register, handleSubmit } = useForm();
+  const onSubmit = async (data) => {
+    console.log(data);
+    firebase.addVolunteerDetail(data);
+    alert("User data saved successfully");
+    props.history.replace("/main");
+  };
   return (
     <>
       <Header />
@@ -30,22 +40,22 @@ function Volunteer() {
         </p>
         <div className="box">
           <h3>Apply here..</h3>
-          <form>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <label>Name</label>
-            <input type="text" />
+            <input type="text" {...register("VolunteerName")}/>
             <label>Resedential Address</label>
-            <input type="text" />
+            <input type="text" {...register("VolunteerAddress")}/>
             <label>Email-Id</label>
-            <input type="email" />
+            <input type="email" {...register("VolunteerEmailId")}/>
             <label>Mobile Number</label>
-            <input type="text" />
+            <input type="text" {...register("VolunteerMobNo")}/>
             <label>Post of volunteer</label>
-            <select name="post" id="post">
-              <option value="post1">Blood Donor Ambassador</option>
-              <option value="post2">Transportation Specialist</option>
+            <select name="post" id="post" {...register("VolunteerPost")}>
+              <option value="Blood Donor Ambassador">Blood Donor Ambassador</option>
+              <option value="Transportation Specialist">Transportation Specialist</option>
             </select>
+            <button type="submit">Submit</button>
           </form>
-          <button>Submit</button>
         </div>
       </section>
     </>

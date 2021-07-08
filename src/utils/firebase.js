@@ -34,15 +34,86 @@ class Firebase {
 		})
 	}
 
-	addQuote(quote) {
+	addUserDetail(data) {
 		if(!this.auth.currentUser) {
 			return alert('Not authorized')
 		}
 
-		return this.db.doc(`users_codedamn_video/${this.auth.currentUser.uid}`).set({
-			quote
-		})
+		return this.db.doc(`Donor_detail/${this.auth.currentUser.uid}`).set(data)
 	}
+
+	addRequestorDetail(data) {
+		if(!this.auth.currentUser) {
+			return alert('Not authorized')
+		}
+
+		return this.db.doc(`Requestor_detail/${this.auth.currentUser.uid}`).set(data)
+	}
+
+	addSearcherDetail(data) {
+		if(!this.auth.currentUser) {
+			return alert('Not authorized')
+		}
+
+		return this.db.doc(`Searcher_detail/${this.auth.currentUser.uid}`).set(data)
+	}
+
+	addPlaceDetail(data) {
+		if(!this.auth.currentUser) {
+			return alert('Not authorized')
+		}
+
+		return this.db.doc(`Place_detail/${this.auth.currentUser.uid}`).set(data)
+	}
+
+	addHostDetail(data) {
+		if(!this.auth.currentUser) {
+			return alert('Not authorized')
+		}
+
+		return this.db.doc(`Host_detail/${this.auth.currentUser.uid}`).set(data)
+	}
+
+	addVolunteerDetail(data) {
+		if(!this.auth.currentUser) {
+			return alert('Not authorized')
+		}
+
+		return this.db.doc(`Volunteer_detail/${this.auth.currentUser.uid}`).set(data)
+	}
+
+	async getUserDetail() {
+		const data = await this.db.doc(`Donor_detail`).get()
+		return data.get(this.auth.currentUser.uid)
+	}
+
+	async getRequestorDetail() {
+		const requestor_data = await this.db.doc(`Requestor_detail`).get()
+		return requestor_data.get(this.auth.currentUser.uid)
+	}
+
+	async getSearcherDetail() {
+		const searcher_data = await this.db.doc(`Searcher_detail`).get()
+		return searcher_data.get(this.auth.currentUser.uid)
+	}
+
+	async getPlaceDetail() {
+		const place_data = await this.db.doc(`Place_detail`).get()
+		return place_data.get(this.auth.currentUser.uid)
+	}
+
+	async getHostDetail() {
+		const host_data = await this.db.doc(`Host_detail`).get()
+		return host_data.get(this.auth.currentUser.uid)
+	}
+
+	async getVolunteerDetail() {
+		const volunteer_data = await this.db.doc(`Volunteer_detail`).get()
+		return volunteer_data.get(this.auth.currentUser.uid)
+	}
+
+
+
 
 	isInitialized() {
 		return new Promise(resolve => {

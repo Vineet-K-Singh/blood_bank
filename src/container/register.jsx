@@ -1,8 +1,22 @@
 import React from "react";
 import Header from "../component/header";
-import './register.css'
+import { useForm } from "react-hook-form";
+import "./register.css";
+import firebase from "../utils/firebase";
 
-function Register() {
+function Register(props) {
+  // const { register, handleSubmit, formState: {} } = useForm();
+  const { register, handleSubmit } = useForm();
+  const onSubmit = async (data) => {
+    console.log(data);
+    firebase.addUserDetail(data);
+    alert("User data saved successfully");
+    props.history.replace("/main");
+  };
+  // let getUserDetail = async () => {
+  //   const data = await firebase.getUserDetail();
+  //   console.log(data);
+  // };
   return (
     <>
       <Header />
@@ -11,37 +25,30 @@ function Register() {
           <div className="booox1"></div>
           <div className="booox2">
             <h2>Fill up the form to donate blood</h2>
-            <form>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <label>Donor Name</label>
-              <input type="text" />
+              <input type="text" {...register("donorName")} />
               <label>Aadhar Id</label>
-              <input type="text" />
+              <input type="text" {...register("aadharId")} />
               <label>Resedential Address</label>
-              <input type="text" />
+              <input type="text" {...register("address")} />
               <label>District</label>
-              <select name="district" id="dist">
-                <option></option>
-              </select>
+              <input type="text" {...register("district")} />
               <label>State</label>
-              <select name="state" id="state">
-                <option></option>
-              </select>
+              <input type="text" {...register("state")} />
               <label>Email Id</label>
-              <input type="email" />
+              <input type="email" {...register("email")} />
               <label>Mobile Number</label>
-              <input type="text" />
+              <input type="text" {...register("mobileNo")} />
               <label>Blood Group</label>
-              <input type="text" />
+              <input type="text" {...register("bloodGroup")} />
               <label>Name of Hospital</label>
-              <select name="hospital" id="hosp">
-                <option></option>
-              </select>
-              <label>Medical History(if any)</label>
-              <input type="text" />
+              <input type="text" {...register("hospital")} />
+              {/* <label>Medical History(if any)</label>
+              <input type="text" {...register("email")}/> */}
+              <button type="submit">Submit</button>
             </form>
-            <a href="/">
-              <button>Submit</button>
-            </a>
+            {/* <button onClick={getUserDetail}>Get Data</button> */}
           </div>
         </div>
       </section>

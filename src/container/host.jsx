@@ -1,8 +1,18 @@
 import React from "react";
 import Header from "../component/header";
-import './host.css'
+import './host.css';
+import { useForm } from "react-hook-form";
+import "./register.css";
+import firebase from "../utils/firebase";
 
-function Host() {
+function Host(props) {
+  const { register, handleSubmit } = useForm();
+  const onSubmit = async (host_data) => {
+    console.log(host_data);
+    firebase.addHostDetail(host_data);
+    alert("User data saved successfully");
+    props.history.replace("/main");
+  };
   return (
     <>
       <Header />
@@ -24,60 +34,28 @@ function Host() {
         </p>
         <div className="box">
           <h3>Lets get started...</h3>
-          <div className="form">
-            <div className="form1">
-              <form>
+              <form onSubmit={handleSubmit(onSubmit)}>
                 <label>First Name</label>
-                <input type="text" />
-                <label>Organization Name</label>
-                <input type="text" />
-                <label>Email-Id</label>
-                <input type="text" />
-                <label>Organization Type</label>
-                <input type="text" />
-              </form>
-            </div>
-            <div className="form2">
-              <form>
+                <input type="text" {...register("HostFirstName")}/>
                 <label>Last Name</label>
-                <input type="text" />
-                <label>Title</label>
-                <input type="text" />
-                <label>Mobile Number</label>
-                <input type="text" />
-                <label>Host Location</label>
-                <input type="text" />
-              </form>
-            </div>
-          </div>
-          <div className="for">
-            <div className="for1">
-              <form>
-                <label>First Name</label>
-                <input type="text" />
-                <label>Last Name</label>
-                <input type="text" />
+                <input type="text" {...register("HostLastName")}/>
                 <label>Organization Name</label>
-                <input type="text" />
+                <input type="text" {...register("HostOrganizationName")}/>
                 <label>Title</label>
-                <input type="text" />
+                <input type="text" {...register("HostTitle")}/>
                 <label>Email-Id</label>
-                <input type="text" />
+                <input type="text" {...register("HostEmailId")}/>
                 <label>Mobile Number</label>
-                <input type="text" />
+                <input type="text" {...register("HostMobNo")}/>
                 <label>Organization Type</label>
-                <input type="text" />
+                <input type="text" {...register("HostOrganizationType")}/>
                 <label>Host Location</label>
-                <input type="text" />
+                <input type="text" {...register("HostLocation")}/>
+                <label>Any additional comments</label>
+                <textarea name="comment" {...register("HostComment")}></textarea>
+                <button type="submit">Submit</button>
               </form>
-            </div>
           </div>
-          <form>
-            <label>Any additional comments</label>
-            <textarea name="comment"></textarea>
-          </form>
-          <button>Submit</button>
-        </div>
       </section>
     </>
   );

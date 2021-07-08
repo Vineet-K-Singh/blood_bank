@@ -1,8 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTint, faBars, faUser } from '@fortawesome/free-solid-svg-icons';
+import firebase from "../utils/firebase"
 
-function Header() {
+function Header(props) {
+    let onLogout=() =>{
+       firebase.logout();
+       props.history.replace('/home');
+    }
     return (
         <header>
         <div id="logo">
@@ -16,8 +21,8 @@ function Header() {
                 <a href="./request" class="link">Request</a>
                 <a href="./searchDonor" class="link">Search a Donor</a>
                 <a href="./nearby" class="link">Nearby Blood Bank</a>
-                <a href="/" class="link">Logout</a>
-                <a href="/" id="user" class="link"><FontAwesomeIcon icon={faUser} color="black"/></a>
+                <a href="/" class="link" onClick={onLogout}>Logout</a>
+                <a href="/fr" id="user" class="link"><FontAwesomeIcon icon={faUser} color="black"/></a>
             </div>
         </div>
         <navbar class="nav">
@@ -27,7 +32,7 @@ function Header() {
             <a href="./searchDonor" class="link">Search a Donor</a>
             <a href="./nearby" class="link">Nearby Blood Bank</a>
             <a href="/" class="link">Logout</a>
-            <a href="/" id="user"><FontAwesomeIcon icon={faUser} color="black"/></a>
+            <a href="/fr" id="user"><FontAwesomeIcon icon={faUser} color="black"/></a>
         </navbar>   
     </header>
     )

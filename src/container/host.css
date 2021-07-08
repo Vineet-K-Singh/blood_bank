@@ -104,51 +104,43 @@ header .nav .social:hover{
     margin: 1.5rem;
     padding: 1rem;
     background-color: orange;
-}
-.host .box h3{
-    font-size: 1rem;
-}
-.host .box .form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.host .box .for{
-    display: none;
-}
-.host .box .form .form1,.form2{
-    height: 100%;
-    width: 50%;
-    margin: 1rem;
-}
-.host .box .form .form1 form, .form2 form,form{
     display: flex;
     flex-direction: column;
 }
-.host .box .form .form1 label, .form2 label, form label{
+.host .box h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.host .box form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15rem;
+}
+.host .box form label{
     font-size: 1rem;
 }
-.host .box .form .form1 input, .form2 input{
+.host .box form input{
     font-size: 1rem;
     padding: .3rem;
-    width: 25rem;
+    width: 45rem;
 }
-.host .box  form textarea{
+.host .box form textarea{
     font-size: 1rem;
-    padding:.5rem;
-
+    padding: .5rem;
+    width:45rem;
 }
-.host .box button{
+.host .box form button{
     background-color: indigo;
     margin-top: 2rem;
-    margin-left: 30rem;
     padding: .3rem;
     font-size: 1.2rem;
     font-weight: bold;
+    width: 7rem;
     color: white;
     border-radius: 1rem;
     cursor: pointer;
 }
+
 
 
 /* Media Querry */
@@ -165,16 +157,20 @@ header .nav .social:hover{
         margin: .4rem;
         padding: .2rem;
     }
-    .host .box button{
-        margin-left: 26rem;
+    .host .box form{
+        padding-left: 1rem;
     }
+    /* .host .box button{
+        margin-left: 1rem;
+    } */
+
 }
 @media screen and (max-width: 980px){
-    .host .box button{
-        margin-left: 20rem;
+    .host .box form input{
+        width: 35rem;
     }
-    .host .box .form .form1 input, .form2 input{
-        width: 18rem;
+    .host .box form textarea{
+        width: 35rem;
     }
 }
 @media screen and (max-width: 760px){
@@ -189,11 +185,11 @@ header .nav .social:hover{
         font-size: .7rem;
         margin: .3rem;
     }
-    .host .box button{
-        margin-left: 15rem;
+    .host .box form input{
+        width: 30rem;
     }
-    .host .box .form .form1 input, .form2 input{
-        width: 14rem;
+    .host .box form textarea{
+        width: 30rem;
     }
 }
 @media screen and (max-width: 680px){
@@ -210,25 +206,31 @@ header .nav .social:hover{
     header .nav{
         display: none;
     }
-    .host .box button{
-        margin-left: 12rem;
+    .host .box form{
+        padding-left: 0rem;
     }
-    .host .box .form .form1 input, .form2 input{
-        width: 10rem;
+    /* .host .box button{
+        margin-left: 0rem;
+    } */
+    .host .box form input{
+        width: 25rem;
     }
+    .host .box form textarea{
+        width: 25rem;
+    }
+    
 }
 @media screen and (max-width: 491px){
     #menu{
         font-size: 1.5rem;
     }
-    .host .box .form{
-        display: none;
+    .host .box form input{
+        width: auto;
     }
-    .host .box .for{
-        display: flex;
-        flex-direction: column;
+    .host .box form label{
+        font-size: 1rem;
     }
-    .host .box button{
-        margin-left: 4rem;
+    .host .box form textarea{
+        width: auto;
     } 
 }
