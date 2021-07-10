@@ -45,12 +45,16 @@ function Sign_in(props) {
             </a>
           </form>
           <table>
+            <tbody>
+            <tr>
             <td>
               <a href="/">Forgot Password?</a>
             </td>
             <td>
               <a href="/">Not a member yet?</a>
             </td>
+            </tr>
+            </tbody>
           </table>
         </div>
       </div>

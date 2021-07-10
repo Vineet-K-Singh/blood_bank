@@ -6,8 +6,8 @@ function Donate() {
   return (
     <>
       <Header />
-      <section class="case">
-        <div class="case1">
+      <section className="case">
+        <div className="case1">
           <h1>Register here</h1>
           <h4>Read the requirement than register</h4>
           <a href="./register">
@@ -15,10 +15,10 @@ function Donate() {
           </a>
         </div>
       </section>
-      <section class="who">
+      <section className="who">
         <h1>General Requiremets</h1>
-        <div class="boox">
-          <div class="boox1">
+        <div className="boox">
+          <div className="boox1">
             <h3>Before you donate:</h3>
             <h5>1. Drink 8 to 10 glasses of water.</h5>
             <h5>2. Get adequate rest.</h5>
@@ -30,7 +30,7 @@ function Donate() {
             </h5>
             <h5>6. Know your medical conditions.</h5>
           </div>
-          <div class="boox2">
+          <div className="boox2">
             <h3>At the time of Donation, you must:</h3>
             <h5>1. Be in good health</h5>
             <h5>2. Be 16 years of age* or older</h5>
@@ -39,10 +39,10 @@ function Donate() {
           </div>
         </div>
       </section>
-      <section class="process">
+      <section className="process">
         <h2>Donation Process</h2>
-        <div class="con">
-          <div class="con1">
+        <div className="con">
+          <div className="con1">
             <h3>Before Donation</h3>
             <h5>Donating is safe and simple.</h5>
             <p>
@@ -80,7 +80,7 @@ function Donate() {
               </li>
             </ul>
           </div>
-          <div class="con2">
+          <div className="con2">
             <h3>During Donation</h3>
             <h5>In just 60 minutes you can save three lives.</h5>
             <p>
@@ -111,7 +111,7 @@ function Donate() {
               </li>
             </ul>
           </div>
-          <div class="con3">
+          <div className="con3">
             <h3>Post Donation</h3>
             <h5>Congratulations! You’ve saved lives. Now what?</h5>
             <p>Here are some tips to help you feel your best:</p>

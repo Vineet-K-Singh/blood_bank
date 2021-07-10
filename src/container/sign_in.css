@@ -57,10 +57,10 @@
     font-weight: bold;
 }
 #sign-in .box2 form{
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
-    padding-left: 25rem;
+    padding-left: 20rem;
 }
 #sign-in .box2 form label{
     font-size: 1.5rem;
@@ -91,7 +91,7 @@
 }
 #sign-in .box2 table{
     text-align: center;
-    margin-left: 25rem;
+    margin-left: 20rem;
 }
 #sign-in .box2 table td a{
     font-size: .8rem;

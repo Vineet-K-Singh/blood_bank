@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../component/header";
 import "./request.css";
 import { useForm } from "react-hook-form";
-import "./register.css";
 import firebase from "../utils/firebase";
 
 function Request(props) {

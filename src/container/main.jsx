@@ -24,8 +24,12 @@ function Main() {
                         <li><h3>Please Donate and Request Blood here</h3></li>
                         <li>
                             <table>
+                                <tbody>
+                                <tr>
                                 <td><a href="./donate"><button>Donate</button></a></td>
                                 <td><a href="./request"><button>Request</button></a></td>
+                                </tr>
+                                </tbody>
                             </table>
                         </li>
                     </ul>
@@ -71,7 +75,7 @@ function Main() {
                         </div> */}
                     </div>
             </section>
-            <secton className="doc">
+            <section className="doc">
                 <div className="doc1">
                     <h1>Volunteers Needed to</h1>
                     <h1>Help Blood Donations</h1>
@@ -80,7 +84,7 @@ function Main() {
                     <h4>needed services to your community.</h4>
                     <a href="./volunteer"><button>Learn more</button></a>
                 </div>
-            </secton>
+            </section>
             <footer>
                 <div className="foot">
                     <h4>Copyright &copy;2021 Indian Blood Bank</h4>

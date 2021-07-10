@@ -3,7 +3,6 @@ import Header from "../component/header";
 import './volunteer.css';
 import Image1 from "../assets/img/image1.jfif";
 import { useForm } from "react-hook-form";
-import "./register.css";
 import firebase from "../utils/firebase";
 
 function Volunteer(props) {
