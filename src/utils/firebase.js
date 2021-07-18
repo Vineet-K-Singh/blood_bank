@@ -11,7 +11,6 @@ const config = {
     messagingSenderId: "535292729275",
     appId: "1:535292729275:web:c357991684a57f2743169e"
   };
-
 class Firebase {
 	constructor() {
 		app.initializeApp(config)

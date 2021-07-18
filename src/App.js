@@ -11,7 +11,12 @@ import SearchDonor from "./container/search_donor";
 import Nearby from "./container/nearby";
 import Host from "./container/host";
 import Volunteer from "./container/volunteer";
-import MapContainer from "./container/map"
+import MapContainer from "./container/map";
+import Admin from "./admin/admin";
+import DonorDetail from "./admin/donor_details";
+import RequestorDetail from "./admin/requestor_details";
+import HostDetail from "./admin/host_details";
+import VolunteerDetail from "./admin/volunteer_details"
 
 function App() {
   return (
@@ -31,6 +36,11 @@ function App() {
             <Route path="/host" component={Host} />
             <Route path="/volunteer" component={Volunteer} />
             <Route path="/map" component={MapContainer} />
+            <Route path="/admin" component={Admin} />
+            <Route path="/donorDetail" component={DonorDetail} />
+            <Route path="/requestorDetail" component={RequestorDetail} />
+            <Route path="/hostDetail" component={HostDetail} />
+            <Route path="/volunteerDetail" component={VolunteerDetail} />
           </Switch>
         </div>
       </Router>

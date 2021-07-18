@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: "Poppins",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.container{
+    padding: 2.5rem;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+table th{
+    font-size: 2rem;
+    width:30rem;
+    height: 4rem;
+    text-align: center;
+    color: black;
+    background-color: cadetblue;
+}
+.tb{
+    font-size: 1.5rem;
+    width:30rem;
+    height: 4rem;
+    text-align: center;
+    color: black;
+    background-color:yellow;
+}

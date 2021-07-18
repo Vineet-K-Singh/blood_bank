@@ -12,7 +12,7 @@ function Header1() {
             <div className="navbar">
                 <a href="/" className="active">Home</a>
                 <a href="./signIn" className="active">Login</a>
-                <a href="/" className="active">Contact Us</a>
+                <a href="/" className="active">Admin</a>
                 <a href="/" className="social"><FontAwesomeIcon icon={faFacebook} color="black"/></a>
                 <a href="/" className="social"><FontAwesomeIcon icon={faTwitter} color="black"/></a>
                 <a href="/" className="social"><FontAwesomeIcon icon={faInstagram} color="black"/></a>
