@@ -28,6 +28,7 @@ header .logo{
     color: red;
 }
 header .logo span{
+    margin-top: 1rem;
     color: red;
 }
 header .nav a{
@@ -59,12 +60,12 @@ header .nav .social:hover{
     color: black;
     display: none;
 }
-#menu button{
+#btn{
     height: 2rem;
     width: 2rem;
     background-color: transparent;
 }
-#menu button:hover{
+#btn:hover{
     cursor: pointer;
 }
 .menu-content {
@@ -76,9 +77,81 @@ header .nav .social:hover{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-.menu-content a {
+.menu-content a{
     color: black;
     padding: .5rem;
     text-decoration: none;
     display: block;
+    text-align: center;
+}
+.menu-content #button{
+    width: 100%;
+    color: black;
+    padding: .5rem;
+    text-decoration: none;
+    display: block;
+}
+.menu-content #button:hover{
+    width: 100%;
+    border-radius: 1rem;
+    color: white;
+    background-color: red;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.show{
+    display: block;
+}
+
+
+
+/* Media Querry */
+@media screen and (max-width: 1240px){
+    header .logo{
+        font-size: 1.2rem;
+        padding-left: .3rem;
+    }
+    header .logo span{
+        margin-top: .7rem;
+    }
+    header .nav a{
+        font-size: .8rem;
+        margin: .4rem;
+        padding: .2rem;
+    }
+}
+@media screen and (max-width: 760px){
+    header .logo{
+        font-size: 1.1rem;
+        padding-left: .2rem;
+    }
+    header .logo span{
+        margin-top: .6rem;
+    }
+    header .nav a{
+        font-size: .7rem;
+        margin: .3rem;
+    }
+}
+@media screen and (max-width: 680px){
+    #menu{
+        display: block;
+    }
+    header .logo{
+        font-size: 1.2rem;
+        padding-left: .3rem;
+    }
+    header .logo span{
+        margin-top: .6rem;
+    }
+    header .nav{
+        display: none;
+    }
+}
+@media screen and (max-width: 480px){
+    #menu{
+        font-size: 1rem;
+    }
+    .menu-content a{
+        font-size: 1rem;
+    }
 }
