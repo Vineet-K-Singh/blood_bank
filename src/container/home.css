@@ -37,26 +37,26 @@
     margin-top: 1rem;
     color: black;
 }
-#header .nav a{
+#header .navbar a{
     font-size: 1.1rem;
     font-weight: bold;
     margin: 1.5rem;
     padding: .5rem;
     color: black;
 }
-#header .nav .active,.link{
+#header .navbar .active{
     border-radius: 1rem;
 }
-#header .nav .social{
+#header .navbar .social{
     margin-top: 2.5rem;
     border-radius: 50%;
 }
-#header .nav .active:hover,.link:hover{
+#header .navbar .active:hover{
     color: white;
     background-color: black;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
-#header .nav .social:hover{
+#header .navbar .social:hover{
     color: white;
     background-color: tansparent;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
@@ -114,7 +114,7 @@
     #header .free1{
         font-size: 1.3rem;
     }
-    #header .nav a{
+    #header .navbar a{
         font-size: 1rem;
         padding: .3rem;
         margin: .6rem;
@@ -140,7 +140,7 @@
     #header .free1 span{
         margin-top: .7rem;
     }
-    #header .nav a{
+    #header .navbar a{
         font-size: .8rem;
         padding: .1rem;
         margin: .3rem;
@@ -166,7 +166,7 @@
     #header .free1 span{
         margin-top: .4rem;
     }
-    #header .nav a{
+    #header .navbar a{
         font-size: .5rem;
         padding: .03rem;
         margin: .13rem;

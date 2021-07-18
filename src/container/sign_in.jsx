@@ -48,10 +48,10 @@ function Sign_in(props) {
             <tbody>
             <tr>
             <td>
-              <a href="/">Forgot Password?</a>
+              <a href="./signUp">Forgot Password?</a>
             </td>
             <td>
-              <a href="/">Not a member yet?</a>
+              <a href="./signUp">Not a member yet?</a>
             </td>
             </tr>
             </tbody>

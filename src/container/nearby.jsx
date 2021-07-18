@@ -10,7 +10,7 @@ function Nearby(props) {
     console.log(place_data);
     firebase.addPlaceDetail(place_data);
     alert("Your data saved successfully");
-    props.history.replace("/main");
+    props.history.replace("/map");
   };
   return (
     <>

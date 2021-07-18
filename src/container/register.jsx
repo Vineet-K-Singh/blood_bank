@@ -44,8 +44,8 @@ function Register(props) {
               <input type="text" {...register("bloodGroup")} />
               <label>Name of Hospital</label>
               <input type="text" {...register("hospital")} />
-              <label>Medical History(if any)</label>
-              <input type="file" {...register("mediacal-report")}/>
+              {/* <label>Medical History(if any)</label>
+              <input type="file" {...register("mediacal-report")}/> */}
               <button type="submit">Submit</button>
             </form>
             {/* <button onClick={getUserDetail}>Get Data</button> */}
